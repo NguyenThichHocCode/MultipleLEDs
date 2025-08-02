@@ -1,24 +1,26 @@
 int red = 13;
 int yel = 12;
 int gre = 11;
-int delayTime = 500;
-
-void setup() {
+ 
+void setup() {                
+ 
   pinMode(red, OUTPUT);
   pinMode(yel, OUTPUT);
   pinMode(gre, OUTPUT);
+      
 }
-
+ 
 void loop() {
-  // Turn all ON
-  digitalWrite(red, HIGH);
-  digitalWrite(yel, HIGH);
-  digitalWrite(gre, HIGH);
-  delay(delayTime);
-
-  // Turn all OFF
-  digitalWrite(red, LOW);
-  digitalWrite(yel, LOW);
-  digitalWrite(gre, LOW);
-  delay(delayTime);
+  digitalWrite(red, HIGH);   
+  delay(500);               
+  digitalWrite(red, LOW);   
+  delay(500);  
+  digitalWrite(yel, HIGH);   
+  delay(500);               
+  digitalWrite(yel, LOW);   
+  delay(500);     
+  digitalWrite(gre, HIGH);   
+  delay(500);               
+  digitalWrite(gre, LOW);   
+  delay(500);                 
 }
